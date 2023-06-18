@@ -1,8 +1,13 @@
 // * Write a function to do the division operation without using the built-in division*/
 
 function division(number, dividedBy) {
-    // Write you logic here.
-    return;
+    //Write you logic here.
+    if (number < dividedBy)return number;
+    
+  else
+
+    return 1+division(number-dividedBy,dividedBy);
+
 }
 
 /* Write a function that implement Math.pow(x,n) but using recursion
@@ -13,7 +18,9 @@ pow(2,4) = 16
 
 function pow(x, n) {
     // Write you logic here.
-    return;
+    if(n==0) return 1;
+    else
+    return  x*pow(x,n-1);
 }
 
 /* The Fibonacci Series is a numeric series starting with the integers 0 and 1. In this series,
@@ -27,7 +34,11 @@ Example: n = 4 ==> 3, n= 0 ==> 0, n = 3 ==> 2 */
 
 function fibonacci(n) {
     // Write you logic here.
-    return;
+    if (n <= 1) return n
+    else{
+        return fibonacci(n-1) + fibonacci(n -2)
+    
+    }
 }
 
 /* Optional 
@@ -51,6 +62,8 @@ Output: "213"  */
 function permutations(n, k) {
     let result;
     // Write you logic here. 
+
+    
     return result;
 };
 
